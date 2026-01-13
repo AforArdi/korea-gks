@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Korea Scholarship (GKS) - Interactive Guide</title>
+    <title>গ্লোবাল কোরিয়া স্কলারশিপ (GKS) - ইন্টারেক্টিভ গাইড</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fafaf9; color: #44403c; }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #fafaf9; color: #44403c; }
         .chart-container {
             position: relative;
             width: 100%;
@@ -36,21 +36,21 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold text-orange-600">GKS Guide</span>
+                    <span class="text-2xl font-bold text-orange-600">GKS গাইড</span>
                 </div>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <button onclick="scrollToSection('overview')" class="text-stone-600 hover:text-orange-600 font-medium transition">Overview</button>
-                    <button onclick="scrollToSection('eligibility')" class="text-stone-600 hover:text-orange-600 font-medium transition">Eligibility</button>
-                    <button onclick="scrollToSection('benefits')" class="text-stone-600 hover:text-orange-600 font-medium transition">Benefits</button>
-                    <button onclick="scrollToSection('process')" class="text-stone-600 hover:text-orange-600 font-medium transition">How to Apply</button>
-                    <button onclick="scrollToSection('documents')" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition shadow-sm">Checklist</button>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <button onclick="scrollToSection('overview')" class="text-stone-600 hover:text-orange-600 font-medium transition">পরিচিতি</button>
+                    <button onclick="scrollToSection('eligibility')" class="text-stone-600 hover:text-orange-600 font-medium transition">যোগ্যতা</button>
+                    <button onclick="scrollToSection('benefits')" class="text-stone-600 hover:text-orange-600 font-medium transition">সুবিধাসমূহ</button>
+                    <button onclick="scrollToSection('process')" class="text-stone-600 hover:text-orange-600 font-medium transition">আবেদন প্রক্রিয়া</button>
+                    <button onclick="scrollToSection('documents')" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition shadow-sm">ডকুমেন্টস চেকলিস্ট</button>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Application Structure Plan:
-         1. Hero: Immediate value proposition and summary of what GKS is.
+         1. Hero: Immediate value proposition in Bangla.
          2. Overview Dashboard: High-level cards answering "What kind of program is this?".
          3. Eligibility Engine: Interactive toggle (Undergrad vs Grad) to answer "Who can apply?".
          4. Benefits Visualization: Chart.js Pie chart to visualize the "Fully Funded" nature.
@@ -63,13 +63,13 @@
         <!-- Hero Section -->
         <section class="bg-stone-900 text-stone-50 py-16 px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Global Korea Scholarship (GKS)</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">গ্লোবাল কোরিয়া স্কলারশিপ (GKS)</h1>
                 <p class="text-xl text-stone-300 mb-8 max-w-2xl mx-auto">
-                    Your complete interactive guide to studying in Korea. Fully funded education for Undergraduate and Graduate students fostering international exchange.
+                    কোরিয়ায় উচ্চশিক্ষার জন্য আপনার সম্পূর্ণ ইন্টারেক্টিভ গাইড। আন্ডারগ্রাজুয়েট এবং গ্রাজুয়েট শিক্ষার্থীদের জন্য সম্পূর্ণ ফান্ডেড স্কলারশিপ।
                 </p>
                 <div class="flex justify-center gap-4">
-                    <button onclick="scrollToSection('eligibility')" class="bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition">Am I Eligible?</button>
-                    <button onclick="scrollToSection('process')" class="bg-transparent border border-stone-400 text-stone-300 px-6 py-3 rounded-lg font-semibold hover:bg-stone-800 transition">View Timeline</button>
+                    <button onclick="scrollToSection('eligibility')" class="bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition">আমি কি যোগ্য?</button>
+                    <button onclick="scrollToSection('process')" class="bg-transparent border border-stone-400 text-stone-300 px-6 py-3 rounded-lg font-semibold hover:bg-stone-800 transition">সময়সীমা দেখুন</button>
                 </div>
             </div>
         </section>
@@ -77,27 +77,27 @@
         <!-- Overview Section -->
         <section id="overview" class="max-w-6xl mx-auto px-4 py-16">
             <div class="mb-10">
-                <h2 class="text-3xl font-bold text-stone-800 mb-4">Program Overview</h2>
+                <h2 class="text-3xl font-bold text-stone-800 mb-4">প্রোগ্রাম পরিচিতি</h2>
                 <p class="text-lg text-stone-600">
-                    The Global Korea Scholarship (GKS) is designed to provide international students with opportunities to study at higher educational institutions in Korea for undergraduate and graduate degrees. Its primary goal is to promote international exchange in education and mutual friendship between countries.
+                    গ্লোবাল কোরিয়া স্কলারশিপ (GKS) আন্তর্জাতিক শিক্ষার্থীদের কোরিয়ার উচ্চশিক্ষা প্রতিষ্ঠানগুলোতে আন্ডারগ্রাজুয়েট এবং গ্রাজুয়েট ডিগ্রি অর্জনের সুযোগ করে দেয়। এর মূল লক্ষ্য হলো আন্তর্জাতিক শিক্ষা বিনিময় এবং দেশগুলোর মধ্যে পারস্পরিক বন্ধুত্ব বৃদ্ধি করা।
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-white p-6 rounded-xl card-shadow border border-stone-100">
                     <div class="text-orange-600 text-4xl mb-4">🎓</div>
-                    <h3 class="text-xl font-bold text-stone-800 mb-2">Degree Levels</h3>
-                    <p class="text-stone-600">Supports both <strong>Bachelor's</strong> (Undergraduate) and <strong>Master's/Doctoral</strong> (Graduate) degrees.</p>
+                    <h3 class="text-xl font-bold text-stone-800 mb-2">ডিগ্রি লেভেল</h3>
+                    <p class="text-stone-600"><strong>ব্যাচেলর</strong> (স্নাতক) এবং <strong>মাস্টার্স/ডক্টরাল</strong> (স্নাতকোত্তর/পিএইচডি) উভয় ডিগ্রির জন্য প্রযোজ্য।</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl card-shadow border border-stone-100">
                     <div class="text-orange-600 text-4xl mb-4">🌏</div>
-                    <h3 class="text-xl font-bold text-stone-800 mb-2">Selection Tracks</h3>
-                    <p class="text-stone-600">Apply via the <strong>Embassy Track</strong> (in your home country) or the <strong>University Track</strong> (directly to a Korean Uni).</p>
+                    <h3 class="text-xl font-bold text-stone-800 mb-2">আবেদনের মাধ্যম (ট্র্যাক)</h3>
+                    <p class="text-stone-600">আপনি <strong>এম্বাসি ট্র্যাক</strong> (নিজ দেশের কোরিয়ান দূতাবাস) অথবা <strong>ইউনিভার্সিটি ট্র্যাক</strong> (সরাসরি কোরিয়ান বিশ্ববিদ্যালয়) এর মাধ্যমে আবেদন করতে পারেন।</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl card-shadow border border-stone-100">
                     <div class="text-orange-600 text-4xl mb-4">📅</div>
-                    <h3 class="text-xl font-bold text-stone-800 mb-2">Key Timelines</h3>
-                    <p class="text-stone-600"><strong>Undergrad:</strong> Sept-Oct<br><strong>Graduate:</strong> Feb-Mar</p>
+                    <h3 class="text-xl font-bold text-stone-800 mb-2">সময়সীমা</h3>
+                    <p class="text-stone-600"><strong>আন্ডারগ্রাজুয়েট:</strong> সেপ্টেম্বর-অক্টোবর<br><strong>গ্রাজুয়েট:</strong> ফেব্রুয়ারি-মার্চ</p>
                 </div>
             </div>
         </section>
@@ -106,15 +106,15 @@
         <section id="eligibility" class="bg-white py-16 border-t border-stone-200">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl font-bold text-stone-800 mb-4">Who Can Apply?</h2>
-                    <p class="text-stone-600">Select your desired degree level to see specific requirements.</p>
+                    <h2 class="text-3xl font-bold text-stone-800 mb-4">কারা আবেদন করতে পারবেন?</h2>
+                    <p class="text-stone-600">আপনার ডিগ্রির লেভেল নির্বাচন করে প্রয়োজনীয় যোগ্যতা দেখে নিন।</p>
                 </div>
 
                 <!-- Toggles -->
                 <div class="flex justify-center mb-8">
                     <div class="bg-stone-100 p-1 rounded-lg inline-flex">
-                        <button id="btn-undergrad" onclick="setEligibility('undergrad')" class="px-6 py-2 rounded-md text-sm font-semibold transition-all active-tab">Undergraduate</button>
-                        <button id="btn-grad" onclick="setEligibility('grad')" class="px-6 py-2 rounded-md text-sm font-semibold transition-all inactive-tab">Graduate</button>
+                        <button id="btn-undergrad" onclick="setEligibility('undergrad')" class="px-6 py-2 rounded-md text-sm font-semibold transition-all active-tab">আন্ডারগ্রাজুয়েট</button>
+                        <button id="btn-grad" onclick="setEligibility('grad')" class="px-6 py-2 rounded-md text-sm font-semibold transition-all inactive-tab">গ্রাজুয়েট</button>
                     </div>
                 </div>
 
@@ -122,35 +122,35 @@
                 <div class="bg-stone-50 border border-stone-200 rounded-2xl p-8 card-shadow transition-all duration-300" id="eligibility-card">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div>
-                            <h3 class="text-2xl font-bold text-stone-800 mb-6" id="elig-title">Undergraduate Requirements</h3>
+                            <h3 class="text-2xl font-bold text-stone-800 mb-6" id="elig-title">আন্ডারগ্রাজুয়েট প্রয়োজনীয়তা</h3>
                             <ul class="space-y-4">
                                 <li class="flex items-start">
                                     <span class="bg-orange-100 text-orange-600 p-1 rounded mr-3 mt-1">✓</span>
                                     <div>
-                                        <span class="font-bold block text-stone-700">Age Limit</span>
-                                        <span class="text-stone-600" id="elig-age">Must be under 25 years of age (as of March 1st of invitation year).</span>
+                                        <span class="font-bold block text-stone-700">বয়স সীমা</span>
+                                        <span class="text-stone-600" id="elig-age">আমন্ত্রণের বছরের ১লা মার্চ অনুযায়ী ২৫ বছরের কম হতে হবে।</span>
                                     </div>
                                 </li>
                                 <li class="flex items-start">
                                     <span class="bg-orange-100 text-orange-600 p-1 rounded mr-3 mt-1">✓</span>
                                     <div>
-                                        <span class="font-bold block text-stone-700">Education</span>
-                                        <span class="text-stone-600" id="elig-edu">Must be a High School Graduate or expected to graduate.</span>
+                                        <span class="font-bold block text-stone-700">শিক্ষা</span>
+                                        <span class="text-stone-600" id="elig-edu">হাই স্কুল গ্রাজুয়েট হতে হবে (বা গ্রাজুয়েশনের প্রত্যাশী)।</span>
                                     </div>
                                 </li>
                                 <li class="flex items-start">
                                     <span class="bg-orange-100 text-orange-600 p-1 rounded mr-3 mt-1">✓</span>
                                     <div>
-                                        <span class="font-bold block text-stone-700">Nationality</span>
-                                        <span class="text-stone-600">Applicant and parents must NOT hold Korean citizenship.</span>
+                                        <span class="font-bold block text-stone-700">জাতীয়তা</span>
+                                        <span class="text-stone-600">আবেদনকারী এবং পিতামাতার কোরিয়ান নাগরিকত্ব থাকা যাবে না।</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="bg-white p-6 rounded-xl border border-stone-100 text-center">
                             <div class="text-5xl mb-4">🎓</div>
-                            <p class="text-sm text-stone-500 font-semibold uppercase tracking-wider mb-2">Program Duration</p>
-                            <p class="text-xl font-bold text-stone-800" id="elig-duration">1 Year Korean Language<br>+<br>4 Years Degree</p>
+                            <p class="text-sm text-stone-500 font-semibold uppercase tracking-wider mb-2">প্রোগ্রামের মেয়াদ</p>
+                            <p class="text-xl font-bold text-stone-800" id="elig-duration">১ বছর ভাষা শিক্ষা<br>+<br>৪ বছর ডিগ্রি</p>
                         </div>
                     </div>
                 </div>
@@ -159,42 +159,42 @@
 
         <!-- Benefits Section (Visualization) -->
         <!-- Visualization & Content Choices: 
-             Goal: Demonstrate the value of the scholarship.
-             Viz: Pie Chart. Why? To show the holistic nature of the "package" (Living + Tuition + Travel).
+             Goal: Demonstrate the value of the scholarship in Bangla.
+             Viz: Pie Chart. 
              Confirming NO SVG/Mermaid.
         -->
         <section id="benefits" class="py-16 px-4 max-w-6xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="text-3xl font-bold text-stone-800 mb-6">Program Benefits</h2>
+                    <h2 class="text-3xl font-bold text-stone-800 mb-6">স্কলারশিপের সুবিধাসমূহ</h2>
                     <p class="text-lg text-stone-600 mb-6">
-                        GKS is a comprehensive, fully-funded scholarship. It covers almost every expense a student might incur, allowing you to focus entirely on your studies and cultural experience.
+                        GKS একটি সম্পূর্ণ ফান্ডেড বা পূর্ণাঙ্গ স্কলারশিপ। এটি একজন শিক্ষার্থীর প্রায় সমস্ত খরচ বহন করে, যাতে আপনি সম্পূর্ণ মনোযোগ পড়াশোনা এবং সাংস্কৃতিক অভিজ্ঞতায় দিতে পারেন।
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-white p-4 rounded-lg border border-stone-200">
-                            <span class="block text-orange-600 font-bold">Airfare</span>
-                            <span class="text-sm text-stone-500">Round-trip economy</span>
+                            <span class="block text-orange-600 font-bold">বিমান ভাড়া</span>
+                            <span class="text-sm text-stone-500">রাউন্ড-ট্রিপ ইকোনমি টিকেট</span>
                         </div>
                         <div class="bg-white p-4 rounded-lg border border-stone-200">
-                            <span class="block text-orange-600 font-bold">Tuition</span>
-                            <span class="text-sm text-stone-500">Fully covered</span>
+                            <span class="block text-orange-600 font-bold">টিউশন ফি</span>
+                            <span class="text-sm text-stone-500">সম্পূর্ণ ফ্রি</span>
                         </div>
                         <div class="bg-white p-4 rounded-lg border border-stone-200">
-                            <span class="block text-orange-600 font-bold">Monthly Allowance</span>
-                            <span class="text-sm text-stone-500">900k ~ 1m KRW</span>
+                            <span class="block text-orange-600 font-bold">মাসিক ভাতা</span>
+                            <span class="text-sm text-stone-500">৯ লক্ষ - ১০ লক্ষ উওন</span>
                         </div>
                         <div class="bg-white p-4 rounded-lg border border-stone-200">
-                            <span class="block text-orange-600 font-bold">Settlement</span>
-                            <span class="text-sm text-stone-500">200,000 KRW (Once)</span>
+                            <span class="block text-orange-600 font-bold">সেটেলমেন্ট ভাতা</span>
+                            <span class="text-sm text-stone-500">২ লক্ষ উওন (একবার)</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-2xl card-shadow border border-stone-100">
-                    <h3 class="text-lg font-bold text-stone-700 mb-4 text-center">Financial Support Structure</h3>
+                    <h3 class="text-lg font-bold text-stone-700 mb-4 text-center">আর্থিক সহায়তার কাঠামো</h3>
                     <div class="chart-container">
                         <canvas id="benefitsChart"></canvas>
                     </div>
-                    <p class="text-center text-xs text-stone-400 mt-4">* Chart represents categorical distribution of benefits</p>
+                    <p class="text-center text-xs text-stone-400 mt-4">* চার্টটি সুবিধার বিভাজন নির্দেশ করছে</p>
                 </div>
             </div>
         </section>
@@ -203,51 +203,51 @@
         <section id="process" class="bg-stone-900 text-stone-50 py-16 px-4">
             <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold mb-4">How & Where to Apply</h2>
-                    <p class="text-stone-400">You must choose <strong>ONE</strong> track. Dual application leads to disqualification.</p>
+                    <h2 class="text-3xl font-bold mb-4">কোথায় এবং কিভাবে আবেদন করবেন?</h2>
+                    <p class="text-stone-400">আপনাকে অবশ্যই <strong>যেকোনো একটি</strong> ট্র্যাক বেছে নিতে হবে। উভয় ট্র্যাকে আবেদন করলে বাতিল বলে গণ্য হবে।</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Embassy Track -->
                     <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 relative overflow-hidden group hover:border-orange-500 transition-colors">
-                        <div class="absolute top-0 right-0 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Option A</div>
-                        <h3 class="text-2xl font-bold mb-4">Embassy Track</h3>
-                        <p class="text-stone-400 mb-6 text-sm">Apply through the Korean Embassy in your home country.</p>
+                        <div class="absolute top-0 right-0 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">অপশন A</div>
+                        <h3 class="text-2xl font-bold mb-4">এম্বাসি ট্র্যাক</h3>
+                        <p class="text-stone-400 mb-6 text-sm">আপনার নিজ দেশের কোরিয়ান দূতাবাসের মাধ্যমে আবেদন করুন।</p>
                         
                         <div class="space-y-4">
                             <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">1</div>
-                                <div class="text-sm">Submit documents to <strong>Korean Embassy</strong></div>
+                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">১</div>
+                                <div class="text-sm"><strong>কোরিয়ান দূতাবাসে</strong> ডকুমেন্টস জমা দিন</div>
                             </div>
                             <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">2</div>
-                                <div class="text-sm">Embassy Selection Interview</div>
+                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">২</div>
+                                <div class="text-sm">এম্বাসি কর্তৃক সিলেকশন ইন্টারভিউ</div>
                             </div>
                             <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">3</div>
-                                <div class="text-sm">NIIED Final Selection</div>
+                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">৩</div>
+                                <div class="text-sm">NIIED কর্তৃক চূড়ান্ত নির্বাচন</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- University Track -->
                     <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 relative overflow-hidden group hover:border-orange-500 transition-colors">
-                        <div class="absolute top-0 right-0 bg-stone-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Option B</div>
-                        <h3 class="text-2xl font-bold mb-4">University Track</h3>
-                        <p class="text-stone-400 mb-6 text-sm">Apply directly to a designated university in Korea.</p>
+                        <div class="absolute top-0 right-0 bg-stone-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">অপশন B</div>
+                        <h3 class="text-2xl font-bold mb-4">ইউনিভার্সিটি ট্র্যাক</h3>
+                        <p class="text-stone-400 mb-6 text-sm">সরাসরি কোরিয়ার নির্দিষ্ট বিশ্ববিদ্যালয়ে আবেদন করুন।</p>
                         
                         <div class="space-y-4">
                             <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">1</div>
-                                <div class="text-sm">Submit documents to <strong>University</strong></div>
+                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">১</div>
+                                <div class="text-sm"><strong>বিশ্ববিদ্যালয়ে</strong> ডকুমেন্টস জমা দিন</div>
                             </div>
                             <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">2</div>
-                                <div class="text-sm">University Selection Interview</div>
+                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">২</div>
+                                <div class="text-sm">বিশ্ববিদ্যালয় কর্তৃক সিলেকশন ইন্টারভিউ</div>
                             </div>
                             <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">3</div>
-                                <div class="text-sm">NIIED Final Verification</div>
+                                <div class="w-8 h-8 rounded-full bg-stone-700 flex items-center justify-center font-bold text-sm mr-4">৩</div>
+                                <div class="text-sm">NIIED কর্তৃক চূড়ান্ত যাচাইকরণ</div>
                             </div>
                         </div>
                     </div>
@@ -257,18 +257,18 @@
 
         <!-- Documents Checklist Section -->
         <section id="documents" class="max-w-4xl mx-auto px-4 py-16">
-            <h2 class="text-3xl font-bold text-stone-800 mb-8 text-center">Required Documents</h2>
+            <h2 class="text-3xl font-bold text-stone-800 mb-8 text-center">প্রয়োজনীয় কাগজপত্র (Documents)</h2>
             
             <!-- IELTS FAQ Box -->
             <div class="bg-orange-50 border border-orange-200 rounded-xl p-6 mb-10">
                 <div class="flex items-start gap-4">
                     <div class="text-2xl">🗣️</div>
                     <div>
-                        <h4 class="font-bold text-orange-800 text-lg">Is IELTS or TOPIK necessary?</h4>
+                        <h4 class="font-bold text-orange-800 text-lg">IELTS বা TOPIK কি বাধ্যতামূলক?</h4>
                         <p class="text-orange-800 mt-1">
-                            Technically, <strong>No</strong>. The guidelines state they are "Optional". However, applicants with valid TOPIK (Korean proficiency) or English proficiency certificates (IELTS, TOEFL) receive <strong>extra points</strong> in the evaluation.
+                            টেকনিক্যালি, <strong>না</strong>। নির্দেশিকা অনুযায়ী এগুলো "ঐচ্ছিক" (Optional)। তবে, যেসব আবেদনকারীর বৈধ TOPIK (কোরিয়ান দক্ষতা) বা ইংরেজি দক্ষতা সনদ (IELTS, TOEFL) আছে, তারা মূল্যায়নে <strong>অতিরিক্ত পয়েন্ট</strong> পাবেন।
                         </p>
-                        <p class="text-sm text-orange-700 mt-2 font-semibold">Recommendation: Strongly advised if you want to be competitive.</p>
+                        <p class="text-sm text-orange-700 mt-2 font-semibold">পরামর্শ: প্রতিযোগিতায় এগিয়ে থাকতে হলে এটি জমা দেওয়া খুব জরুরি।</p>
                     </div>
                 </div>
             </div>
@@ -276,8 +276,8 @@
             <!-- Interactive Checklist -->
             <div class="bg-white rounded-xl card-shadow overflow-hidden border border-stone-200">
                 <div class="p-6 bg-stone-50 border-b border-stone-200">
-                    <h3 class="font-bold text-stone-700">Document Checklist</h3>
-                    <p class="text-xs text-stone-500">All documents must be Apostilled or Consular Confirmed.</p>
+                    <h3 class="font-bold text-stone-700">ডকুমেন্টস চেকলিস্ট</h3>
+                    <p class="text-xs text-stone-500">সকল কাগজপত্র অবশ্যই অ্যাপোস্টাইল (Apostilled) বা কনসুলার কনফার্মড হতে হবে।</p>
                 </div>
                 <div class="divide-y divide-stone-100" id="checklist-container">
                     <!-- JS will populate this -->
@@ -288,41 +288,41 @@
     </main>
 
     <footer class="bg-stone-900 text-stone-500 py-8 text-center text-sm border-t border-stone-800">
-        <p>Interactive guide generated based on source materials for GKS.</p>
-        <p class="mt-2">Always verify final details with the official NIIED guidelines.</p>
+        <p>GKS-এর তথ্যের ওপর ভিত্তি করে তৈরি ইন্টারেক্টিভ গাইড।</p>
+        <p class="mt-2">সবসময় অফিসিয়াল NIIED নির্দেশিকার সাথে চূড়ান্ত তথ্য যাচাই করে নিন।</p>
     </footer>
 
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 
     <script>
-        // --- Data Definitions ---
+        // --- Data Definitions (Translated) ---
         const eligibilityData = {
             undergrad: {
-                title: "Undergraduate Requirements",
-                age: "Must be under 25 years of age.",
-                edu: "High School Graduate (or expected).",
-                duration: "1 Year Language + 4 Years Degree"
+                title: "আন্ডারগ্রাজুয়েট প্রয়োজনীয়তা",
+                age: "বয়স ২৫ বছরের নিচে হতে হবে।",
+                edu: "হাই স্কুল পাস বা ফলাফলের অপেক্ষায়।",
+                duration: "১ বছর ভাষা শিক্ষা + ৪ বছর ডিগ্রি"
             },
             grad: {
-                title: "Graduate Requirements",
-                age: "Must be under 40 years of age.",
-                edu: "Bachelor's or Master's Degree Holder.",
-                duration: "1 Year Language + 2 (Master) or 3 (PhD) Years Degree"
+                title: "গ্রাজুয়েট প্রয়োজনীয়তা",
+                age: "বয়স ৪০ বছরের নিচে হতে হবে।",
+                edu: "ব্যাচেলর বা মাস্টার্স ডিগ্রি থাকতে হবে।",
+                duration: "১ বছর ভাষা + ২ (মাস্টার্স) বা ৩ (পিএইচডি) বছর ডিগ্রি"
             }
         };
 
         const documents = [
-            { name: "Application Form", required: true },
-            { name: "Personal Statement", required: true },
-            { name: "Study Plan", required: true },
-            { name: "Letter of Recommendation (1)", required: true },
-            { name: "GKS Applicant Agreement", required: true },
-            { name: "Personal Medical Assessment", required: true },
-            { name: "Proof of Citizenship (Applicant & Parents)", required: true },
-            { name: "Graduation Certificate", required: true, note: "Apostilled" },
-            { name: "Grade Transcript", required: true, note: "Apostilled" },
-            { name: "Awards / Certificates", required: false, note: "Optional" },
-            { name: "TOPIK / IELTS / TOEFL", required: false, note: "Optional (Points Awarded)" }
+            { name: "আবেদন ফর্ম (Application Form)", required: true },
+            { name: "পার্সোনাল স্টেটমেন্ট (Personal Statement)", required: true },
+            { name: "স্টাডি প্ল্যান (Study Plan)", required: true },
+            { name: "রিকমেন্ডেশন লেটার (১টি)", required: true },
+            { name: "GKS আবেদনকারী চুক্তি", required: true },
+            { name: "মেডিকেল অ্যাসেসমেন্ট (Personal Medical Assessment)", required: true },
+            { name: "নাগরিকত্বের প্রমাণ (আবেদনকারী ও পিতামাতা)", required: true },
+            { name: "গ্রাজুয়েশন সার্টিফিকেট", required: true, note: "অ্যাপোস্টাইল করা" },
+            { name: "গ্রেড ট্রান্সক্রিপ্ট (মার্কশিট)", required: true, note: "অ্যাপোস্টাইল করা" },
+            { name: "পুরস্কার / সার্টিফিকেট", required: false, note: "ঐচ্ছিক" },
+            { name: "TOPIK / IELTS / TOEFL", required: false, note: "ঐচ্ছিক (পয়েন্ট যুক্ত হয়)" }
         ];
 
         // --- Interaction Logic ---
@@ -379,7 +379,7 @@
                         <span class="text-stone-700 font-medium ${doc.required ? '' : 'text-stone-500'}">${doc.name}</span>
                         ${doc.note ? `<span class="ml-2 text-xs bg-stone-200 text-stone-600 px-2 py-0.5 rounded">${doc.note}</span>` : ''}
                     </div>
-                    ${doc.required ? '<span class="text-xs text-orange-600 font-bold uppercase tracking-wider">Required</span>' : ''}
+                    ${doc.required ? '<span class="text-xs text-orange-600 font-bold uppercase tracking-wider">আবশ্যক</span>' : ''}
                 </div>
             `).join('');
         }
@@ -399,13 +399,13 @@
             }
         }
 
-        // --- Chart Initialization ---
+        // --- Chart Initialization (Translated Labels) ---
         function initCharts() {
             const ctx = document.getElementById('benefitsChart').getContext('2d');
             new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Tuition', 'Monthly Stipend', 'Airfare', 'Settlement', 'Insurance', 'Language Training'],
+                    labels: ['টিউশন ফি', 'মাসিক ভাতা', 'বিমান ভাড়া', 'সেটেলমেন্ট', 'ইনস্যুরেন্স', 'ভাষা শিক্ষা'],
                     datasets: [{
                         data: [40, 30, 10, 5, 5, 10], // Estimated weight for visualization
                         backgroundColor: [
@@ -426,7 +426,7 @@
                     plugins: {
                         legend: {
                             position: 'bottom',
-                            labels: { font: { family: 'Inter', size: 12 }, boxWidth: 12, padding: 20 }
+                            labels: { font: { family: 'Hind Siliguri', size: 12 }, boxWidth: 12, padding: 20 }
                         },
                         tooltip: {
                             callbacks: {
